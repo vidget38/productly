@@ -43,6 +43,40 @@ h5 {
   line-height: 26px;
 }
 
+.button {
+  font-family: "Open Sans", Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  padding: 11px 25px 13px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.button__bordered {
+  background: #ffffff;
+  border: 1px solid #d7d7d7;
+  color: #544837;
+}
+
+.button__colored {
+  background: #ff9900;
+  color: #ffffff;
+  border: 1px solid #ff9900;
+}
+
+.button__colored:hover {
+  background: #ff7549;
+  border-color: #ff7549;
+}
+
+.button__bordered:hover {
+  background: #bcd0e5;
+  border-color: #bcd0e5;
+}
+
 .wrapper {
   max-width: 1197px;
   margin: auto;
@@ -58,6 +92,15 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header__buttons > .button {
+  margin-left: 14px;
+}
+
+.header__buttons > .button:first-child {
+  margin-left: 14px;
+  margin-right: 0;
 }
 
 .navigation {
@@ -79,6 +122,24 @@ h5 {
 
 .contact-us {
   background: #ffeee1;
+}
+
+.promo {
+  padding: 30px 0;
+}
+
+.promo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promo__content {
+  padding-right: 65px;
+}
+
+.promo-buttons > * {
+  margin-right: 44px;
 }
 
 /*# sourceMappingURL=style.css.map */
