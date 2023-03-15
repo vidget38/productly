@@ -349,6 +349,10 @@ section, main, header, footer, article {
   transition: all 0.3s ease-out;
 }
 
+.button, body {
+  font-family: "Open Sans", Verdana, sans-serif;
+}
+
 .promo__text, h1 {
   font-family: "Poppins", Verdana, sans-serif;
 }
@@ -359,7 +363,9 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Open Sans", Verdana, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 2.6 rem;
 }
 
 h1 {
@@ -398,10 +404,9 @@ h5 {
 }
 
 .button {
-  font-family: "Open Sans", Verdana, sans-serif;
+  font-size: size;
+  font-weight: weight;
   font-style: normal;
-  font-weight: 600;
-  font-size: 1.6rem;
   line-height: 2.2rem;
   padding: 11px 25px 13px;
   border-radius: 4px;
@@ -425,6 +430,10 @@ h5 {
 .button_colored:hover {
   background: #ff7549;
   border-color: #ff7549;
+}
+
+.link-button {
+  color: #ff9900;
 }
 
 .wrapper {
