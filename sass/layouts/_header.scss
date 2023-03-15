@@ -18,20 +18,3 @@
     margin-left: 14px;
     margin-right: 0;
 }
-
-.navigation {
-    display: flex;
-    font-size: 1.5rem;
-    line-height: 2.8rem;
-}
-
-.navigation__link {
-    list-style: none;
-    padding: 0 10px;
-    cursor: pointer;
-}
-
-.navigation__link a {
-    text-decoration: none;
-    color: $color-heading;
-}
