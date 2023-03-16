@@ -27,4 +27,10 @@
 
 .link-button {
     color: $color-primary;
+    display: inline-flex;
+    align-items: center;
+}
+
+.link-button__text {
+    margin-left: 9px;
 }
