@@ -319,6 +319,11 @@ ul {
   padding: 0;
 }
 
+@media screen and (max-width: 500px) {
+  .logo {
+    width: 100px;
+  }
+}
 .navigation__link, .footer-navigation__links a {
   transition: all 0.3s ease-out;
 }

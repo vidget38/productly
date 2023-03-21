@@ -29,3 +29,9 @@
 @mixin media-mobilesmall {
     @media (max-width: $mobile-small-width) { @content; }
 }
+
+@media screen and (max-width: 500px) {
+    .logo {
+        width: 100px;
+    }
+}
