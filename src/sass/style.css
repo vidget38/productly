@@ -535,6 +535,7 @@ h5 {
 .tag {
   border-radius: 90px;
   padding: 0 14px;
+  cursor: pointer;
   font-size: 1.3rem;
   font-weight: normal;
   font-style: normal;
@@ -1071,10 +1072,15 @@ h5 {
   cursor: pointer;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+.strategy_hidden {
+  display: none;
 }
 @media (max-width: 768px) {
   .strategy {
     overflow: hidden;
+    padding-top: 200px;
   }
 }
 
@@ -1089,6 +1095,13 @@ h5 {
   margin: 0 0 29px;
   text-align: left;
   flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+  .strategy_image {
+    position: absolute;
+    top: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

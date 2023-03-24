@@ -38,8 +38,13 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
+    position: relative;
+    &_hidden {
+        display: none;
+    }
     @include media-tablet {
         overflow: hidden;
+        padding-top: 200px;
     }
 }
 
@@ -54,4 +59,11 @@
     margin: 0 0 29px;
     text-align: left;
     flex-grow: 1;
+}
+
+.strategy_image {
+    @include media-tablet {
+        position: absolute;
+        top: 0;
+    }
 }
