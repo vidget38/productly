@@ -1,3 +1,48 @@
+import { Article } from './js/Article'
+
+const data = [
+    {
+        id: 1,
+        title: 'Increasing Prosperity With Positive Thinking',
+        urlToImage: './src/img/strategies/increasing.jpg',
+        tags: ['Art', 'Design'],
+        content: 'Knowing your self',
+        date: '01.01.2020'
+    },
+    {
+        id: 2,
+        title: 'Motivation Is The First Step To Success',
+        urlToImage: './src/img/strategies/motivation.jpg',
+        tags: ['Culture'],
+        content: 'Knowing your self',
+        date: '01.01.2020'
+    },
+    {
+        id: 3,
+        title: 'Success Steps For Your Personal Or Business Life',
+        urlToImage: './src/img/strategies/success.jpg',
+        tags: ['Culture', 'Art', 'Design'],
+        content: 'Knowing your self',
+        date: '01.01.2020'
+    },
+    {
+        id: 4,
+        title: 'Success Steps For Your Personal Or Business Life Plus Funny Image on the Back',
+        urlToImage: './src/img/strategies/business.jpg',
+        tags: ['Culture', 'Art', 'Design'],
+        content: 'Knowing your self',
+        date: '01.01.2020'
+    },
+    {
+        id: 5,
+        title: 'Increasing Prosperity With Positive Thinking',
+        urlToImage: './src/img/strategies/increasing2.jpg',
+        tags: ['Design'],
+        content: 'Knowing your self',
+        date: '01.01.2020'
+    }
+]
+
 window.onload = function() {
     console.log("Hello, world!");
 
