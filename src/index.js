@@ -6,7 +6,7 @@ const data = [
         title: 'Increasing Prosperity With Positive Thinking',
         urlToImage: './src/img/strategies/increasing.jpg',
         tags: ['Art', 'Design'],
-        content: 'Knowing your self',
+        content: 'Knowing yourself is the first, and a very critical step in the process of planning your future. How can you figure out what you want to do with your life if you don’t know: What am I going to do with the  rest of my life? What is my dream job? What do I enjoy doing? What’s my passion? What kind of career fits my personality?',
         date: '01.01.2020'
     },
     {
@@ -14,7 +14,7 @@ const data = [
         title: 'Motivation Is The First Step To Success',
         urlToImage: './src/img/strategies/motivation.jpg',
         tags: ['Culture'],
-        content: 'Knowing your self',
+        content: 'Knowing yourself is the first, and a very critical step in the process of planning your future. How can you figure out what you want to do with your life if you don’t know: What am I going to do with the  rest of my life? What is my dream job? What do I enjoy doing? What’s my passion? What kind of career fits my personality?',
         date: '01.01.2020'
     },
     {
@@ -22,7 +22,7 @@ const data = [
         title: 'Success Steps For Your Personal Or Business Life',
         urlToImage: './src/img/strategies/success.jpg',
         tags: ['Culture', 'Art', 'Design'],
-        content: 'Knowing your self',
+        content: 'Knowing yourself is the first, and a very critical step in the process of planning your future. How can you figure out what you want to do with your life if you don’t know: What am I going to do with the  rest of my life? What is my dream job? What do I enjoy doing? What’s my passion? What kind of career fits my personality?',
         date: '01.01.2020'
     },
     {
@@ -30,7 +30,7 @@ const data = [
         title: 'Success Steps For Your Personal Or Business Life Plus Funny Image on the Back',
         urlToImage: './src/img/strategies/business.jpg',
         tags: ['Culture', 'Art', 'Design'],
-        content: 'Knowing your self',
+        content: 'Knowing yourself is the first, and a very critical step in the process of planning your future. How can you figure out what you want to do with your life if you don’t know: What am I going to do with the  rest of my life? What is my dream job? What do I enjoy doing? What’s my passion? What kind of career fits my personality?',
         date: '01.01.2020'
     },
     {
@@ -38,15 +38,21 @@ const data = [
         title: 'Increasing Prosperity With Positive Thinking',
         urlToImage: './src/img/strategies/increasing2.jpg',
         tags: ['Design'],
-        content: 'Knowing your self',
+        content: 'Knowing yourself is the first, and a very critical step in the process of planning your future. How can you figure out what you want to do with your life if you don’t know: What am I going to do with the  rest of my life? What is my dream job? What do I enjoy doing? What’s my passion? What kind of career fits my personality?',
         date: '01.01.2020'
     }
 ]
 
+
 window.onload = function() {
     console.log("Hello, world!");
 
-    //Tags
+    // Render Articles
+    if(data) {
+        renderArticlesToDom();
+    }
+ 
+    // Tags
     addTagsClickHandler();
 }
 
@@ -96,4 +102,25 @@ const filterStrategyBySelectedTag = (selectedTag) => {
             }
         });
     });
+}
+
+const renderArticlesToDom = () => {
+    let strategiesWrapper = getStrategiesWrapper();
+    generateArticles(data).forEach(article => {
+        strategiesWrapper.append(article.generateArticle());
+    });
+}
+
+const getStrategiesWrapper = () => {
+    const strategiesContainer = document.querySelector('.strategy-wrapper');
+    strategiesContainer.innerHTML = '';
+    return strategiesContainer;
+}
+
+const generateArticles = (data) => {
+    let article = [];
+    data.forEach(article => {
+        article.push(new Article(article))
+    });
+    return article;
 }

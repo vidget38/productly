@@ -20,5 +20,9 @@
   "dependencies": {
     "normalize-scss": "^7.0.1",
     "sass": "^1.59.2"
+  },
+  "devDependencies": {
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1"
   }
 }
