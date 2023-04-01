@@ -1,4 +1,5 @@
-import { Article } from './js/Article'
+import { Article } from './js/Article';
+import { Modal } from './js/Modal';
 
 const data = [
     {
@@ -118,9 +119,9 @@ const getStrategiesWrapper = () => {
 }
 
 const generateArticles = (data) => {
-    let article = [];
+    let articles = [];
     data.forEach(article => {
-        article.push(new Article(article))
+        articles.push(new Article(article))
     });
-    return article;
+    return articles;
 }
