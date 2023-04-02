@@ -61,7 +61,7 @@
     flex-grow: 1;
 }
 
-.strategy_image {
+.strategy__image {
     @include media-tablet {
         position: absolute;
         top: 0;
@@ -69,7 +69,7 @@
 }
 
 .article-modal__content {
-    .strategy-image {
+    .strategy__image {
         width: 100%;
         @include media-tablet {
             position: static;

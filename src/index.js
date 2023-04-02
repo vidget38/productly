@@ -162,7 +162,7 @@ const getClickedData = (id) => {
     return data.find(article => article.id == id)
 }
 
-const renderArticleModalWindow = (content) => {
+const renderArticleModalWindow = (article) => {
     let modal = new ArticleModal('article-modal', article);
     modal.renderModal();
 }

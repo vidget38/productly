@@ -1151,17 +1151,17 @@ h5 {
 }
 
 @media (max-width: 768px) {
-  .strategy_image {
+  .strategy__image {
     position: absolute;
     top: 0;
   }
 }
 
-.article-modal__content .strategy-image {
+.article-modal__content .strategy__image {
   width: 100%;
 }
 @media (max-width: 768px) {
-  .article-modal__content .strategy-image {
+  .article-modal__content .strategy__image {
     position: static;
   }
 }
